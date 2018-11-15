@@ -1,4 +1,4 @@
-package Main;
+
 
 import java.util.Objects;
 
@@ -12,8 +12,8 @@ public class Point {
     }
 
     public double distance(Point p){
-       double dx = p.x - this.x;
-       double dy = p.y - this.y;
+       double dx = p.x - getX();
+       double dy = p.y - getY();
 
        return Math.sqrt((Math.pow(dx,2))+(Math.pow(dy,2)));
     }

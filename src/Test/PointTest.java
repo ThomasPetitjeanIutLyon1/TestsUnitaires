@@ -1,6 +1,5 @@
-package Test;
 
-import Main.Point;
+
 import com.sun.deploy.pings.Pings;
 import org.junit.Test;
 
@@ -27,4 +26,6 @@ public class PointTest {
         assertEquals(p2.getX(),2);
         assertEquals(p2.getY(),2);
     }
+
+
 }
