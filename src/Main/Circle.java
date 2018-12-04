@@ -12,7 +12,7 @@ public class Circle implements Shape{
 
     @Override
     public boolean contains(Point p) {
-        if(Math.sqrt(Math.pow(p.getX() - this.center.getX(),2) + (p.getY() - this.center.getY())) < this.radius){
+        if(Math.sqrt(Math.pow(p.getX() - this.center.getX(),2) + Math.pow(p.getY() - this.center.getY(), 2)) <= this.radius){
             return true;
         }
         else return false;

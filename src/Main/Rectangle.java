@@ -12,7 +12,7 @@ public class Rectangle implements Shape{
 
     @Override
     public boolean contains(Point p) {
-        if(p.getX() > this.topLeftCorner.getX() && p.getX() < this.width && p.getY() > this.topLeftCorner.getY() && p.getY() < this.height){
+        if(p.getX() >= this.topLeftCorner.getX() && p.getX() <= this.width && p.getY() >= this.topLeftCorner.getY() && p.getY() <= this.height){
             return true;
         }
         else return false;
